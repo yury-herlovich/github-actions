@@ -19,4 +19,5 @@ jobs:
 
       - name: Print
         run: |
+          echo "Should not be trigered on release"
           echo "Branch - ${{ github.ref }}"
