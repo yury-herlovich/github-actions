@@ -19,5 +19,4 @@ jobs:
 
       - name: Print
         run: |
-          echo "ENV: ${ env }"
           echo "Branch - $github.ref"
