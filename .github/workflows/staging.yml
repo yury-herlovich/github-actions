@@ -19,4 +19,4 @@ jobs:
 
       - name: Print
         run: |
-          echo "Branch - $github.ref"
+          echo "Branch - ${ github.ref }"
