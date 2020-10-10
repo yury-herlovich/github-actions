@@ -15,7 +15,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: ${{ GITHUB_REF }}
+          ref: ${{ github.ref }}
 
       - name: Print
-        run: echo "Branch - ${ GITHUB_REF }"
+        run: |
+          echo "ENV: ${ env }"
+          echo "Branch - $github.ref"
