@@ -1,0 +1,23 @@
+name: Release CI
+
+on:
+  push:
+    branches:
+      - release
+    tags:
+      - v*
+
+jobs:
+  print_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Print
+        run: |
+          echo "Should be trigered on release only"
+          echo "Branch - ${{ github.ref }}"
