@@ -1,7 +1,7 @@
 name: Release CD
 
 on:
-  release:
+  push:
     tags:
       - v*
 
