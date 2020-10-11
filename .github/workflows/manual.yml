@@ -1,4 +1,4 @@
-name: Manual release CD
+name: Manual CD
 
 on:
   workflow_dispatch:

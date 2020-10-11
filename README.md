@@ -1,13 +1,13 @@
 # CD Testing
 
 ### Development
-`Master` is a main development branch. All push events to the master branch trigger staging CD (`.github/workflows/staging.yml`)
+`Master` is the main development branch. All push events to the master branch will trigger staging CD (`.github/workflows/staging.yml`)
 
 ### Release
-`Release` is a main release branch. Only pushing a new tag triggers release CD (`.github/workflows/release.yml`)
+`Release` is the main release branch. Only pushing a new tag will trigger release CD (`.github/workflows/release.yml`)
 
 ### Manual deployment
-Release can be triggered manual through `Manual Release CD` workflow with any version (tag) (`.github/workflows/manual.yml`)
+Release can be started manually via the `Manual CD` workflow with any version (tag) (`.github/workflows/manual.yml`)
 
 ## Examples
 
@@ -27,3 +27,8 @@ Release can be triggered manual through `Manual Release CD` workflow with any ve
 - Click `Run workflow`
 - Select branch `Release`
 - Enter version/tag
+
+---
+
+![Release CD](https://github.com/yury-herlovich/github-actions/workflows/Release%20CD/badge.svg)
+![Staging CD](https://github.com/yury-herlovich/github-actions/workflows/Staging%20CD/badge.svg)
