@@ -6,6 +6,7 @@ on:
       version:
         description: 'Version to release'
         required: true
+        default: v1.0.0
 
 env:
   BRANCH: refs/tags/${{ github.event.inputs.version }}
