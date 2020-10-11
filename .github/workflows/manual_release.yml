@@ -1,0 +1,26 @@
+name: Manual release CD
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release'
+        required: true
+
+env:
+  BRANCH: refs/tags/${{ github.event.inputs.version }}
+
+jobs:
+  print_branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ env.BRANCH }}
+
+      - name: Print
+        run: |
+          echo "Should be trigered manual only"
+          echo "Branch - ${{ env.BRANCH }}"
