@@ -1,4 +1,4 @@
-# CD Testing
+# CD with GitHub Actions
 
 ### Development
 `Master` is the main development branch. All push events to the master branch will trigger staging CD (`.github/workflows/staging.yml`)
